@@ -67,12 +67,15 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        String cadena = String.format("\nNombre del estudiante: %s\n"
+        String cadena = String.format("\nNOTAS DEL ESTUDIANTE\n"
+                + "Nombre del estudiante: %s\n"
                 + "Calificacion materia 1: %.2f\n"
                 + "Calificacion materia 2: %.2f\n"
                 + "Calificacion materia 3: %.2f\n"
-                + "Promedio: %.2f\n", nombreEstudiante,
-                calificacionMateria1, calificacionMateria2, calificacionMateria3, promedioCalificaciones);
+                + "Promedio: %.2f\n", obtenerNombreEstudiante(),
+                obtenerCalificacionMateria1(), obtenerCalificacionMateria2(),
+                obtenerCalificacionMateria3(), obtenerPromedioCalificaciones());
         return cadena;
     }
+
 }
